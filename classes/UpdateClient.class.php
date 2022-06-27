@@ -22,7 +22,7 @@
 namespace XXSimoXX\PhpErrorLogViewer;
 
 // EDIT: URL where Update Manager is installed; with trailing slash!
-const UPDATE_SERVER = 'https://nylen.io/cp-plugins/';
+const UPDATE_SERVER = 'https://software.gieffeedizioni.it/';
 
 // EDIT: Comment this out and fill with the first part of the url
 //       of your Download link to make sure that updates

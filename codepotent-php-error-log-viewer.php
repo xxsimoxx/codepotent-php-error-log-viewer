@@ -4,12 +4,14 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: PHP Error Log Viewer
  * Description: Create a browser-viewable display of the PHP error log. Messages are styled, filterable, and reverse-sortable to facilitate quick skimming.
- * Version: 2.4.0
+ * Version: 2.5.0
  * Author: ClassicPress Contributors
- * Author URI: https://www.classicpress.net
- * Plugin URI: https://www.classicpress.net
+ * Author URI: https://software.gieffeedizioni.it
+ * Plugin URI: https://software.gieffeedizioni.it
  * Text Domain: codepotent-php-error-log-viewer
  * Domain Path: /languages
+ * License: GPLv2
+ * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * -----------------------------------------------------------------------------
  * This is free software released under the terms of the General Public License,
  * version 2, or later. It is distributed WITHOUT ANY WARRANTY; without even the
@@ -19,6 +21,8 @@
  * Copyright 2021, John Alarcon (Code Potent)
  * -----------------------------------------------------------------------------
  * Adopted by ClassicPress Contributors, 06/01/2021
+ * ----------------------------------------------------------------------------- 
+ * Hard fork by Simone Fioravanti, 27/06/2022
  * -----------------------------------------------------------------------------
  */
 
