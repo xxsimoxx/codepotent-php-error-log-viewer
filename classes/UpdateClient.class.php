@@ -19,7 +19,7 @@
  */
 
 // EDIT: Make this unique. Example: YourDevName\YourPluginName;
-namespace CodePotent\PhpErrorLogViewer;
+namespace XXSimoXX\PhpErrorLogViewer;
 
 // EDIT: URL where Update Manager is installed; with trailing slash!
 const UPDATE_SERVER = 'https://nylen.io/cp-plugins/';

@@ -16,7 +16,7 @@
  */
 
 // Declare the namespace.
-namespace CodePotent\PhpErrorLogViewer;
+namespace XXSimoXX\PhpErrorLogViewer;
 
 // Prevent direct access.
 if (!defined('ABSPATH')) {
