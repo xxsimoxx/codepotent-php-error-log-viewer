@@ -17,6 +17,6 @@ echo
 
 git archive -o "../${slug}-${version}.zip" --prefix ${slug}/ HEAD
 
-hub release create -d -a "../${slug}-${version}.zip" -m "Carbon Copy ${version}" "${version}"
+hub release create -d -a "../${slug}-${version}.zip" -m "PHP Error Log Viewer ${version}" "${version}"
 
 rm "../${slug}-${version}.zip"
