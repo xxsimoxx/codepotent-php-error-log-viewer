@@ -92,7 +92,9 @@ The checkboxes at the top of the error log display allow you to choose which typ
 add_filter('codepotent_php_errror_log_viewer_primary_alert', 'yourprefix_hide_primary_alert');
 </pre>
 
---- ### Secondary Alert Bubble This filter will allow you to hide or redesign the secondary (gray) alert bubble in the admin bar. This filter accepts a single argument, the markup of the secondary alert bubble.
+--- 
+
+### Secondary Alert Bubble This filter will allow you to hide or redesign the secondary (gray) alert bubble in the admin bar. This filter accepts a single argument, the markup of the secondary alert bubble.
 
 <pre>function yourprefix_hide_secondary_alert($alert) {
     return '';
