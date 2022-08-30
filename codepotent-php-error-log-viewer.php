@@ -4,7 +4,9 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: PHP Error Log Viewer
  * Description: Create a browser-viewable display of the PHP error log. Messages are styled, filterable, and reverse-sortable to facilitate quick skimming.
- * Version: 2.5.0
+ * Version: 2.5.1
+ * Requires PHP: 5.6
+ * Requires CP: 1.0
  * Author: Simone Fioravanti
  * Author URI: https://software.gieffeedizioni.it
  * Plugin URI: https://software.gieffeedizioni.it
