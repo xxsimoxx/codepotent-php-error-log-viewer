@@ -23,7 +23,7 @@
  * Copyright 2021, John Alarcon (Code Potent)
  * -----------------------------------------------------------------------------
  * Adopted by ClassicPress Contributors, 06/01/2021
- * ----------------------------------------------------------------------------- 
+ * -----------------------------------------------------------------------------
  * Hard fork by Simone Fioravanti, 27/06/2022
  * -----------------------------------------------------------------------------
  */
@@ -172,7 +172,7 @@ class PhpErrorLogViewer {
 		if (!current_user_can('manage_options')) {
 			return;
 		}
-		
+
 		// No way to get the link.
 		if (!isset($_SERVER['REQUEST_SCHEME']) || !isset($_SERVER['HTTP_HOST']) || !isset($_SERVER['REQUEST_URI'])) {
 			return;
@@ -196,7 +196,7 @@ class PhpErrorLogViewer {
 		// Filters to remove alert bubbles.
 		$primary_alert = apply_filters(PLUGIN_PREFIX.'_primary_alert', $primary_alert);
 		$secondary_alert = apply_filters(PLUGIN_PREFIX.'_secondary_alert', $secondary_alert);
-		
+
 		// Assemble the return URL.
 		$return_url =  esc_url_raw(wp_unslash($_SERVER['REQUEST_SCHEME']).'://'. wp_unslash($_SERVER['HTTP_HOST']). wp_unslash($_SERVER['REQUEST_URI']));
 
@@ -1267,6 +1267,10 @@ class PhpErrorLogViewer {
 
 		// No permission to activate plugins? Bail.
 		if (!current_user_can('activate_plugins')) {
+			return;
+		}
+
+		if (get_option(PLUGIN_PREFIX, false) !== false) {
 			return;
 		}
 
