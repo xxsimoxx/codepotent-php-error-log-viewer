@@ -21,7 +21,7 @@ jQuery(document).ready(function($) {
 	let prefix = localized.prefix;
 
 	// Handle basic log purges (via URL.)
-	$('#'+prefix+'-confirm-purge-top,#'+prefix+'-confirm-purge-bottom').click(function(e) {
+	$('#'+prefix+'-confirm-purge-top,#'+prefix+'-confirm-purge-bottom').on('click', function(e) {
 		e.preventDefault();
 		if (confirm_purge()) {
 			window.location.href = localized.deletion_link;
@@ -29,7 +29,7 @@ jQuery(document).ready(function($) {
 	});
 
 	// Hande inline log purges (via AJAX.)
-	$('#wp-admin-bar-'+prefix+'-admin-bar-purge-link a').click(function(e) {
+	$('#wp-admin-bar-'+prefix+'-admin-bar-purge-link a').on('click', function(e) {
 		e.preventDefault();
 		if (confirm_purge()) {
 			$.post(localized.ajax_url, {
