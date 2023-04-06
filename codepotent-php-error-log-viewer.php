@@ -73,6 +73,10 @@ class PhpErrorLogViewer {
 	 */
 	public $errors = [];
 
+	private $raw_errors = [];
+	private $error_map  = [];
+	private $filesize   = 0;
+
 	/**
 	 * Constructor
 	 *
