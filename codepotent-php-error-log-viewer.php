@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: PHP Error Log Viewer
  * Description: Create a browser-viewable display of the PHP error log. Messages are styled, filterable, and reverse-sortable to facilitate quick skimming.
- * Version: 2.5.4
+ * Version: 2.5.5
  * Requires PHP: 5.6
  * Requires CP: 1.0
  * Author: Simone Fioravanti
@@ -87,10 +87,6 @@ class PhpErrorLogViewer {
 	 * @since 1.0.0
 	 */
 	public function __construct() {
-
-		if (!function_exists('\wp_get_current_user')) {
-			require_once(ABSPATH.'wp-includes/pluggable.php');
-		}
 
 		// Setup all the things.
 		$this->init();
@@ -472,11 +468,6 @@ class PhpErrorLogViewer {
 	 * @return void
 	 */
 	public function convert_error_log_into_properties() {
-
-		// Admins only.
-		if (!current_user_can('manage_options')) {
-			return;
-		}
 
 		// Initialization.
 		$this->errors = $this->raw_errors = [];
