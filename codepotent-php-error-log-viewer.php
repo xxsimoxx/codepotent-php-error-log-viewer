@@ -4,7 +4,7 @@
  * -----------------------------------------------------------------------------
  * Plugin Name: PHP Error Log Viewer
  * Description: Create a browser-viewable display of the PHP error log. Messages are styled, filterable, and reverse-sortable to facilitate quick skimming.
- * Version: 2.5.5
+ * Version: 2.5.6
  * Requires PHP: 5.6
  * Requires CP: 1.0
  * Author: Simone Fioravanti
@@ -218,7 +218,7 @@ class PhpErrorLogViewer {
 		]);
 
 		// Add submenu item to purge log via AJAX; only if log is writeable.
-		if (is_writable($this->error_log)) {
+		if (!empty($this->error_log) && is_writable($this->error_log)) {
 			$wp_admin_bar->add_menu([
 				'parent' => PLUGIN_PREFIX.'_admin_bar',
 				'title' => esc_html__('Purge Error Log', 'codepotent-php-error-log-viewer'),
